@@ -4,8 +4,9 @@
 "$ ln -s ~/Dropbox/dotfiles/_vim ~/.vim
 " 
 " windows
-" mklink _vimrc path\to\Dropbox\dotfiles\_vimrc
+" mklink .vimrc path\to\Dropbox\dotfiles\_vimrc
 " mklink /d .vim path\to\Dropbox\dotfiles\_vim 
+" mklink .gvimrc path\to\Dropbox\dotfiles\_gvimrc
 
 "file encode
 set fileencoding=utf-8
@@ -28,6 +29,11 @@ set expandtab
 syntax on
 
 set number  "show line number
+
+" fonts
+" Windows
+set guifont=MS_Gothic:h10
+
 
 "
 " neobundle
