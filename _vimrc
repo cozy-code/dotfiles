@@ -2,6 +2,10 @@
 "$ ln -s ~/Dropbox/dotfiles/_vimrc ~/.vimrc
 "$ ln -s ~/Dropbox/dotfiles/_gvimrc ~/.gvimrc
 "$ ln -s ~/Dropbox/dotfiles/_vim ~/.vim
+" 
+" windows
+" mklink _vimrc path\to\Dropbox\dotfiles\_vimrc
+" mklink /d .vim path\to\Dropbox\dotfiles\_vim 
 
 "file encode
 set fileencoding=utf-8
