@@ -1,3 +1,5 @@
 _ssh
 .DS_Store
 /_vim/bundle/
+
+._vimrc.swp
