@@ -1,3 +1,15 @@
+" gvim system language
+"英語メニューにする
+source $VIMRUNTIME/delmenu.vim 
+set langmenu=none 
+source $VIMRUNTIME/menu.vim
+
+"英語メッセージにする
+if has("multi_lang")
+    language C
+endif
+
+
 let g:save_window_file = expand('~/.vimwinpos')
 augroup SaveWindow
   autocmd!

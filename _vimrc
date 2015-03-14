@@ -10,7 +10,12 @@
 
 "file encode
 set fileencoding=utf-8
+"set fileencoding=japan
 set fileencodings=iso-2022-jp,utf-8,euc-jp,ucs-2le,ucs-2,cp932
+set encoding=utf-8
+scriptencoding=utf-8
+
+
 
 "
 " working directory
@@ -44,10 +49,11 @@ set backspace=start,eol,indent
 set number  "show line number
 
 set list    "show control chars
-set listchars=tab:»-,trail:-,eol:¬,extends:»,precedes:«
+"set listchars=tab:>-,trail:.,eol:¶,extends:>,precedes:<
+set listchars=eol:¬,tab:▸\
 "control char color NonText:crlf SpecialKey:Tab
-hi NonText guibg=NONE guifg=DarkGreen
-hi SpecialKey guibg=NONE guifg=Gray40
+"hi NonText guibg=NONE guifg=DarkGreen
+"hi SpecialKey guibg=NONE guifg=Gray40
 
 set cursorline      "show current cursor line
 
