@@ -27,8 +27,9 @@ set directory=$HOME/var
 "
 " Status Line
 " ステータス
-set statusline=%F%m%r%h%w\ [FORMAT=%{&fileencoding}/%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-set laststatus=2
+set statusline=%F\ %m%r%h%w%=
+set statusline+=enc=%{&fileencoding}\|eol=%{&ff}\|type=%Y\|col=%04v\|row=%04l/%L
+set laststatus=2    "show status
 
 "
 "インデント
