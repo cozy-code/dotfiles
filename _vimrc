@@ -111,6 +111,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "insert neobundle pulugin here
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Shougo/neocomplcache'
+source $HOME/.vim/_vim_neocomplcache
+
 
 call neobundle#end()
 filetype plugin indent on
