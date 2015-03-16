@@ -7,6 +7,7 @@
 " mklink .vimrc path\to\Dropbox\dotfiles\_vimrc
 " mklink /d .vim path\to\Dropbox\dotfiles\_vim 
 " mklink .gvimrc path\to\Dropbox\dotfiles\_gvimrc
+" mkdir %HOME%\var
 
 "file encode
 set fileencoding=utf-8
@@ -107,11 +108,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 "Manage neobundle itself
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundleFetch 'scrooloose/nerdtree'
-NeoBundleFetch 'digitaltoad/vim-jade'
-
 "insert neobundle pulugin here
-
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'digitaltoad/vim-jade'
 
 call neobundle#end()
 filetype plugin indent on
