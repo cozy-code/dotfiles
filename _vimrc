@@ -116,6 +116,10 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/neocomplcache'
 source $HOME/.vim/_vim_neocomplcache
 
+"まとめてコメントアウト ビジュアルモードで行を選択-> Ctrl+k
+NeoBundle "tyru/caw.vim.git"
+nmap <C-K> <Plug>(caw:i:toggle)
+vmap <C-K> <Plug>(caw:i:toggle)
 
 call neobundle#end()
 filetype plugin indent on
