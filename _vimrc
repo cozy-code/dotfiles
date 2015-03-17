@@ -82,11 +82,6 @@ if has('syntax')
     call ZenkakuSpace()
 endif
 
-
-" fonts
-" Windows
-set guifont="ＭＳ ゴシック":h9
-
 "
 " file
 "

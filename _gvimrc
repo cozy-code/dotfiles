@@ -28,3 +28,6 @@ if filereadable(g:save_window_file)
   execute 'source' g:save_window_file
 endif
 
+" font
+set guifont=Consolas:h10,Lucida_Console:h10:w5 guifontwide=MS_Gothic:h10
+
