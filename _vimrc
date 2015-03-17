@@ -55,12 +55,17 @@ set number  "show line number
 
 set list    "show control chars
 "set listchars=tab:>-,trail:.,eol:¶,extends:>,precedes:<
-set listchars=eol:¬,tab:▸\
+set listchars=eol:¬,tab:▸-
 "control char color NonText:crlf SpecialKey:Tab
-"hi NonText guibg=NONE guifg=DarkGreen
-"hi SpecialKey guibg=NONE guifg=Gray40
+hi NonText guibg=NONE guifg=lightblue
+hi SpecialKey guibg=NONE guifg=lightblue
 
 set cursorline      "show current cursor line
+" アンダーラインを引く(color terminal)
+highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
+" アンダーラインを引く(gui)
+highlight CursorLine gui=underline guifg=NONE guibg=NONE
+
 
 " 全角スペース"　"の表示
 function! ZenkakuSpace()
